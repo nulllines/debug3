@@ -84,12 +84,12 @@ With [debug3](https://www.npmjs.com/package/debug3)
 ```js
 const debug = require('debug3')('http');
 
-debug([1, 2, 3], JSON.stringify(largefile));
+debug([1, 2, 3], () => JSON.stringify(largefile));
 // With process.env.DEBUG === 'super-server:*'
 // Output: **super-server:http** [1, 2, 3], {"large-json-file": [1111212,2232323,4435353....
 // Time taken: 500ms
 
-debug([1, 2, 3], JSON.stringify(largefile));
+debug([1, 2, 3], () => JSON.stringify(largefile));
 // With process.env.DEBUG === undefined
 // Output: <empty>
 // Time taken: 0ms
