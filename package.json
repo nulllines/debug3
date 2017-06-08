@@ -11,7 +11,8 @@
     "test": "mocha",
     "build": "babel lib -d src",
     "coverage": "nyc mocha",
-    "coverage-lcov": "nyc --reporter=lcov --reporter=text-lcov mocha"
+    "coverage-lcov": "nyc --reporter=lcov mocha",
+    "coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls"
   },
   "author": "Null Lines Pte Ltd",
   "contributors": [
@@ -24,6 +25,7 @@
     "debugger"
   ],
   "dependencies": {
+    "coveralls": "^2.13.1",
     "debug": "^2.6.8",
     "read-pkg-up": "^2.0.0"
   },
