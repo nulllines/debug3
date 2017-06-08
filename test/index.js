@@ -11,7 +11,6 @@ const namespace = 'test:namespace';
 // Mock the debug module
 const mockDebugFunction = sinon.spy();
 const mockDebugModule = sinon.stub().returns(mockDebugFunction);
-mockDebugModule.onCall(0, (...args) => console.log(...args));
 mock('debug', mockDebugModule);
 
 const debug = require('../lib')(namespace);
@@ -20,13 +19,6 @@ const debug_noprefix = require('../lib')(namespace, {prefix: false});
 describe('Debug Module', () => {
 
     it('was initialized properly', () => {
-
-        var spyCalls = mockDebugModule.getCalls();
-
-        spyCalls.forEach(call => {
-            console.log(call.args);
-        });
-
         sinon.assert.calledTwice(mockDebugModule);
     });
 
