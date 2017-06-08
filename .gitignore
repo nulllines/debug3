@@ -1,0 +1,9 @@
+# Coverage
+.coveralls.yml
+.nyc_output
+coverage
+
+# JetBrains
+.idea
+
+node_modules

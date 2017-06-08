@@ -1,0 +1,59 @@
+{
+  "name": "debug3",
+  "version": "1.0.0",
+  "description": "a tiny debugging wrapper on top of `debug` to improve performance",
+  "main": "src/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha",
+    "build": "babel lib -d src",
+    "coverage": "nyc mocha",
+    "coverage-lcov": "nyc --reporter=lcov --reporter=text-lcov mocha"
+  },
+  "author": "Null Lines Pte Ltd",
+  "contributors": [
+    "Max Holman <max@holmn.com> (https://www.maxholman.com)"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "debug",
+    "log",
+    "debugger"
+  ],
+  "dependencies": {
+    "debug": "^2.6.8",
+    "read-pkg-up": "^2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nulllines/debug3"
+  },
+  "bugs": {
+    "url": "https://github.com/nulllines/debug3/issues"
+  },
+  "engines": {
+    "node": ">= 4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.5.2",
+    "chai": "^4.0.2",
+    "eslint": "^3.19.0",
+    "eslint-config-n7s": "^0.1.2",
+    "mocha": "^3.4.2",
+    "mock-require": "^2.0.2",
+    "nyc": "^11.0.2",
+    "sinon": "^2.3.2"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint-config-n7s"
+    ],
+    "env": {
+      "node": true
+    }
+  }
+}
