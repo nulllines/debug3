@@ -1,5 +1,7 @@
 # debug3
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/nulllines/debug3.svg)](https://greenkeeper.io/)
+
 [![npm version](https://badge.fury.io/js/debug3.svg)](https://badge.fury.io/js/debug3) [![Build Status](https://travis-ci.org/nulllines/debug3.svg?branch=master)](https://travis-ci.org/nulllines/debug3) [![Coverage Status](https://coveralls.io/repos/github/nulllines/debug3/badge.svg?branch=master)](https://coveralls.io/github/nulllines/debug3?branch=master) [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fnulllines%2Fdebug3.svg?type=shield)](https://app.fossa.io/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fnulllines%2Fdebug3?ref=badge_shield)
 
 
