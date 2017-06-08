@@ -1,6 +1,6 @@
 {
   "name": "debug3",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a tiny debugging wrapper on top of `debug` to improve performance",
   "main": "src/index.js",
   "directories": {
