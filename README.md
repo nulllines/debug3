@@ -81,7 +81,7 @@ debug('This is a debug test!', [1, 2, 3], JSON.stringify(largefile));
 
 With [debug3](https://www.npmjs.com/package/debug3)
  
-```
+```js
 const debug = require('debug3')('http');
 
 debug([1, 2, 3], JSON.stringify(largefile));
