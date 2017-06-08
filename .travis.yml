@@ -3,7 +3,14 @@ node_js:
   - "6"
   - "7"
   - "8"
+before_install:
+  - npm i -g npm5
+  - npm5 i -g greenkeeper-lockfile@1
+install: npm5 install
+before_script:
+  - greenkeeper-lockfile-update
 after_script:
   - npm run coveralls
+  - greenkeeper-lockfile-upload
 notifications:
   webhooks: https://app.fossa.io/hooks/travisci
