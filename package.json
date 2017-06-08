@@ -8,11 +8,11 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha",
+    "test": "nyc mocha",
     "build": "babel lib -d src",
-    "coverage": "nyc mocha",
+    "coverage": "npm -s test",
     "coverage-lcov": "nyc --reporter=lcov mocha",
-    "coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls"
+    "coveralls": "nyc report --reporter=text-lcov | coveralls"
   },
   "author": "Null Lines Pte Ltd",
   "contributors": [
