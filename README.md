@@ -1,5 +1,8 @@
 # debug3
 
+[![npm version](https://badge.fury.io/js/debug3.svg)](https://badge.fury.io/js/debug3) [![Build Status](https://travis-ci.org/nulllines/debug3.svg?branch=master)](https://travis-ci.org/nulllines/debug3) [![Coverage Status](https://coveralls.io/repos/github/nulllines/debug3/badge.svg?branch=master)](https://coveralls.io/github/nulllines/debug3?branch=master)
+
+
 A tiny debugging wrapper on top of [debug](https://www.npmjs.com/package/debug)
 
 The main difference is that `debug3` accepts functions as arguments and does not execute them unless it will output something (ie `process.env.DEBUG` is set to the relevant value). 
