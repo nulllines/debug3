@@ -25,14 +25,14 @@ Pass this resulting function any type of object, including functions.
 
 ## Example
 
-(In these examples package.json has a name of `super-server`)
+(In these examples package.json has a name of `super-server` which you can see in the output)
 
 Basic Example
 
 ```js
 const debug = require('debug3')('http');
-debug('This is a debug test!', [1, 2, 3]);
 
+debug('This is a debug test!', [1, 2, 3]);
 // Output: **super-server:http** This is a debug test! [1, 2, 3]
 
 ```
