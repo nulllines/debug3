@@ -8,7 +8,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "nyc mocha",
+    "test": "DEBUG= nyc mocha",
     "build": "babel lib -d src",
     "coverage": "npm -s test",
     "coverage-lcov": "nyc --reporter=lcov mocha",
