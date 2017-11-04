@@ -27,7 +27,7 @@
   "dependencies": {
     "coveralls": "^3.0.0",
     "debug": "^3.0.0",
-    "read-pkg-up": "^2.0.0"
+    "read-pkg-up": "^3.0.0"
   },
   "repository": {
     "type": "git",
