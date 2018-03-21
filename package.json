@@ -48,7 +48,7 @@
     "mocha": "^4.0.1",
     "mock-require": "^2.0.2",
     "nyc": "^11.0.2",
-    "sinon": "^4.0.0"
+    "sinon": "^5.0.0"
   },
   "eslintConfig": {
     "extends": [
