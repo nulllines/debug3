@@ -34,7 +34,7 @@ describe('Debug Module', () => {
     });
 
     it('is called with correct params (basic)', () => {
-        mockDebugFunction.reset();
+        mockDebugFunction.resetHistory();
         mockDebugFunction.enabled = true;
 
         debug('testing');
@@ -42,7 +42,7 @@ describe('Debug Module', () => {
     });
 
     it('calls functions correctly (single function)', () => {
-        mockDebugFunction.reset();
+        mockDebugFunction.resetHistory();
         mockDebugFunction.enabled = true;
 
         debug(() => 'testing');
@@ -52,7 +52,7 @@ describe('Debug Module', () => {
     });
 
     it('calls functions correctly (multiple arguments)', () => {
-        mockDebugFunction.reset();
+        mockDebugFunction.resetHistory();
         mockDebugFunction.enabled = true;
 
         debug(1, 2, 3, 4, () => 5);
@@ -62,7 +62,7 @@ describe('Debug Module', () => {
 
 
     it('passes correct arguments through (multiple data types)', () => {
-        mockDebugFunction.reset();
+        mockDebugFunction.resetHistory();
         mockDebugFunction.enabled = true;
 
         debug(() => 'testing', {}, []);
@@ -72,7 +72,7 @@ describe('Debug Module', () => {
     });
 
     it('doesn\'t do anything at all when debug is turned off', () => {
-        mockDebugFunction.reset();
+        mockDebugFunction.resetHistory();
         mockDebugFunction.enabled = false;
 
         debug(() => 'testing', {}, []);
@@ -80,7 +80,7 @@ describe('Debug Module', () => {
     });
 
     it('is called twice correctly', () => {
-        mockDebugFunction.reset();
+        mockDebugFunction.resetHistory();
         mockDebugFunction.enabled = true;
 
         debug(() => 'testing', {}, []);
@@ -89,7 +89,7 @@ describe('Debug Module', () => {
     });
 
     it('returned undefined', () => {
-        mockDebugFunction.reset();
+        mockDebugFunction.resetHistory();
         mockDebugFunction.enabled = true;
 
         const result = debug(() => 'testing', {}, []);
