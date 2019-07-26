@@ -3,13 +3,17 @@
 function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
 var debug = require('debug');
-var pkg = require('read-pkg-up').sync().pkg;
+
+var _require$sync = require('read-pkg-up').sync(),
+    pkg = _require$sync.package;
 
 /**
  * @param {String} namespace
  * @param {Object} options
  * @returns {function(...[*])}
  */
+
+
 module.exports = function (namespace) {
     var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : { prefix: true };
 
