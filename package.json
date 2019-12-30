@@ -25,9 +25,9 @@
     "debugger"
   ],
   "dependencies": {
-    "coveralls": "^3.0.5",
+    "coveralls": "^3.0.9",
     "debug": "^4.1.1",
-    "read-pkg-up": "^7.0.0"
+    "read-pkg-up": "^7.0.1"
   },
   "repository": {
     "type": "git",
@@ -37,18 +37,17 @@
     "url": "https://github.com/nulllines/debug3/issues"
   },
   "engines": {
-    "node": ">= 4"
+    "node": ">= 8"
   },
   "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-preset-env": "^1.5.2",
-    "chai": "^4.0.2",
-    "eslint": "^6.1.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^6.8.0",
     "eslint-config-n7s": "^0.1.2",
-    "mocha": "^6.2.0",
+    "mocha": "^6.2.2",
     "mock-require": "^3.0.3",
-    "nyc": "^14.1.1",
-    "sinon": "^8.0.0"
+    "nyc": "^15.0.0",
+    "sinon": "^8.0.1"
   },
   "eslintConfig": {
     "extends": [
